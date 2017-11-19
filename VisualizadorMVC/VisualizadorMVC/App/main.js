@@ -7,7 +7,7 @@
 
     function main() {
         var vm = this;
-        vm.food = 'pizza';
+        vm.sobrenome = 'Lopes';
     }
 
 })();
