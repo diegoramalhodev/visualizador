@@ -1,12 +1,22 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿html {
+    
 }
+
+body {
+    padding: 0;
+    padding-top: 50px;
+    margin: 0;
+    /*padding-bottom: 20px;*/
+}
+
+html, body, #map { height: calc(100vh - 50px); width: 100vw; }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+    padding: 0;
+    margin: 0;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -22,3 +32,8 @@ select,
 textarea {
     max-width: 280px;
 }
+
+#map {
+    
+}
+

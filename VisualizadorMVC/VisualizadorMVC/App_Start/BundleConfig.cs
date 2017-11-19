@@ -17,6 +17,9 @@ namespace VisualizadorMVC
             bundles.Add(new ScriptBundle("~/bundles/angularjs").Include(
                         "~/Scripts/angular.min.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/leaflet").Include(
+                        "~/Scripts/leaflet.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/home").Include(
                         "~/App/app.module.js",
                         "~/App/main.js"));
@@ -32,6 +35,7 @@ namespace VisualizadorMVC
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Styles/leaflet.css",
                       "~/Content/site.css"));
         }
     }
