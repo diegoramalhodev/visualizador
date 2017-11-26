@@ -1,8 +1,19 @@
-﻿<div id="body" align="center">
+﻿@model List<MvcApiProject.Models.Users>
+    
+<div id="body" align="center">
     <br />
     <button>GET request</button>
     <br /><br />
     <div id="teste"></div>
+</div>
+
+<div>
+
+    @foreach (var item in (List<MvcApiProject.Models.Users>)ViewBag.List)
+    {
+        <div>@item.codigo : @item.nome</div>
+    }
+
 </div>
 
     @section Scripts {
